@@ -1,2 +1,2 @@
-# Ohjelmoinnin-perusteet_Elisa-Anttila
+# Ohjelmoinnin-perusteet_Elisa Anttila
 Opintojakson kaikki työt :)
