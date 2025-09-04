@@ -1,2 +1,3 @@
 # Ohjelmoinnin-perusteet_Elisa Anttila
-Opintojakson kaikki työt :)
+
+Moi, mä oon Elisa 18v Lahdesta ja opiskelen nyt tieto- ja viesitntätekniikkaa Lahden Ammattikorkeakoulussa LAB:ssa. Aloitin opinnot suoraan lukio pohjalta, ilman suurempaa työkokemusta mistään. 
