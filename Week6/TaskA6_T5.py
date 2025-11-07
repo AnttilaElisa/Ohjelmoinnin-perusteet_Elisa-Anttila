@@ -11,7 +11,6 @@ def readValues(FileName: str) -> str:
 
     File.close()
 
-    # Remove the last delimiter
     if Values.endswith(DELIMITER):
         Values = Values[:-1]
 
@@ -36,7 +35,6 @@ def analyseValues(PValues: str) -> str:
         else:
             CurrentValueStr += Character
 
-    # Handle the last value
     if CurrentValueStr != "":
         Value = int(CurrentValueStr)
         if Value > Greatest:
@@ -70,3 +68,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
