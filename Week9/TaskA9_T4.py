@@ -10,13 +10,11 @@ TEMP_MAX = 10000
 def collectCelsius():
     feed = input("Insert Celsius: ")
 
-    # Try converting to float
     try:
         c = float(feed)
     except:
         raise ValueError("could not convert string to float: '{}'".format(feed))
 
-    # Check range
     if c < TEMP_MIN or c > TEMP_MAX:
         raise Exception("{} temperature out of range.".format(c))
 
@@ -32,3 +30,4 @@ except Exception as e:
     print(e)
 
 print("Program ending.")
+
