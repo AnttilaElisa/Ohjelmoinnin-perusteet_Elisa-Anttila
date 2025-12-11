@@ -24,7 +24,6 @@ def merge(PLeft: list[int], PRight: list[int], PMerge: list[int], PAsc: bool = T
             else:
                 PMerge.append(PRight[j])
                 j += 1
-    # Append remaining
     PMerge.extend(PLeft[i:])
     PMerge.extend(PRight[j:])
     return None
@@ -43,7 +42,6 @@ def mergeSort(PValues: list[int], PAsc: bool = True) -> None:
     merged = []
     merge(left, right, merged, PAsc)
 
-    # overwrite original list
     PValues[:] = merged
     return None
 
@@ -62,7 +60,6 @@ def readValues(PFilename: str) -> list[int]:
 
 def main() -> None:
     print("Program starting.")
-    # CLI argument or prompt
     if len(sys.argv) == 2:
         filename = sys.argv[1]
         print(f"The filename '{filename}' was passed via CLI.")
@@ -71,15 +68,12 @@ def main() -> None:
 
     values = readValues(filename)
 
-    # Raw
     print(f"Raw '{filename}' -> {', '.join(map(str, values))}")
 
-    # Ascending
     asc_values = values.copy()
     mergeSort(asc_values, True)
     print(f"Ascending '{filename}' -> {', '.join(map(str, asc_values))}")
 
-    # Descending
     desc_values = values.copy()
     mergeSort(desc_values, False)
     print(f"Descending '{filename}' -> {', '.join(map(str, desc_values))}")
@@ -88,3 +82,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
