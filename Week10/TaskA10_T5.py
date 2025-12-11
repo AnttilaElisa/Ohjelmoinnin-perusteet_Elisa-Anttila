@@ -15,11 +15,9 @@ def recursiveFactorial(PNum: int) -> int:
 def main() -> None:
     print("Program starting.")
     try:
-        # Ask user for input
         user_input = input("Insert factorial: ").strip()
         num = int(user_input)
 
-        # Display results
         print(f"Factorial {num}!")
         result = recursiveFactorial(num)
         print(f"{num} = {result}")
@@ -33,3 +31,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
