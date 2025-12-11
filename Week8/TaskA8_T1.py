@@ -2,7 +2,7 @@ import time
 
 def main() -> None:
     print("Program starting.")
-    pause_duration = 1.0  # default duration in seconds
+    pause_duration = 1.0 
 
     while True:
         showOptions()
@@ -36,3 +36,4 @@ def askChoice() -> int:
 
 if __name__ == "__main__":
     main()
+
