@@ -25,7 +25,7 @@ def readValues(PFilename: str, PValues: list[int]) -> None:
 
 def bubbleSort(PNums: list[int]) -> list[int]:
     """Bubble sort implementation (returns sorted list)."""
-    arr = PNums[:]  # work on a copy
+    arr = PNums[:] 
     n = len(arr)
     for i in range(n - 1):
         for j in range(n - i - 1):
@@ -87,19 +87,16 @@ def main() -> None:
                 print("No dataset loaded. Please read values first.")
                 continue
 
-            # Measure speeds
             builtin_time = measureSortingTime(sorted, copy.deepcopy(Values))
             bubble_time = measureSortingTime(bubbleSort, copy.deepcopy(Values))
             quick_time = measureSortingTime(quickSort, copy.deepcopy(Values))
 
-            # Store results
             Results.clear()
             Results.append(f"Measured speeds for dataset '{Filename}':")
             Results.append(f" - Built-in sorted {builtin_time} ns")
             Results.append(f" - Buble sort {bubble_time} ns")
             Results.append(f" - Quick sort {quick_time} ns")
 
-            # Display results
             print("\n" + "\n".join(Results))
 
         elif choice == "3":
@@ -116,7 +113,6 @@ def main() -> None:
         else:
             print("Invalid option. Try again.")
 
-    # Cleanup
     Values.clear()
     Results.clear()
     print("\nProgram ending.")
@@ -124,3 +120,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
