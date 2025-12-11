@@ -7,21 +7,17 @@
 print("Program starting.")
 
 try:
-    # Collecting input values
     r = input("Insert red: ")
     g = input("Insert green: ")
     b = input("Insert blue: ")
 
-    # Convert to integers
     r = int(r)
     g = int(g)
     b = int(b)
 
-    # Check if values are in range 0-255
     if not (0 <= r <= 255) or not (0 <= g <= 255) or not (0 <= b <= 255):
         raise ValueError("Value out of range")
 
-    # Display RGB details
     print("RGB Details:")
     print(f"- Red {r}")
     print(f"- Green {g}")
@@ -35,3 +31,4 @@ except:
     print("Couldn't perform the designed task due to the invalid input values.")
 
 print("Program ending.")
+
