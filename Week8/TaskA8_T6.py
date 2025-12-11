@@ -3,7 +3,7 @@ import svgwrite
 
 def main() -> None:
     print("Program starting.")
-    Dwg = svgwrite.Drawing()  # Initialize drawing object
+    Dwg = svgwrite.Drawing()
 
     while True:
         showOptions()
@@ -40,3 +40,4 @@ def askChoice() -> int:
 
 if __name__ == "__main__":
     main()
+
