@@ -8,7 +8,6 @@ print("Program starting.")
 
 filename = input("Insert filename: ")
 
-# Try opening the file — if it fails, file doesn't exist
 try:
     file = open(filename, "r")
 except:
@@ -17,7 +16,6 @@ except:
 
 print("## {} ##".format(filename))
 
-# Print file content
 for line in file:
     print(line.rstrip())
 
@@ -26,3 +24,4 @@ file.close()
 print("## {} ##".format(filename))
 
 print("Program ending.")
+
